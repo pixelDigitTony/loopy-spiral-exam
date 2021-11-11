@@ -19167,11 +19167,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  mounted: function mounted() {
-    console.log('Component mounted.');
-  }
-});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
 
@@ -19179,36 +19175,21 @@ __webpack_require__.r(__webpack_exports__);
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
   \*****************************/
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @vue/runtime-dom */ "./node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js");
+/* harmony import */ var _components_ExampleComponent_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-window.Vue = (__webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js")["default"]);
-/**
- * The following block of code may be used to automatically register your
- * Vue components. It will recursively scan this directory for the Vue
- * components and automatically register them with their "basename".
- *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
- */
-// const files = require.context('./', true, /\.vue$/i)
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('example-component', (__webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]));
-/** 
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
 
-var app = new Vue({
-  el: '#app'
-});
+(0,_vue_runtime_dom__WEBPACK_IMPORTED_MODULE_1__.createApp)({
+  components: {
+    ExampleComponent: _components_ExampleComponent_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+  }
+}).mount('#app');
 
 /***/ }),
 
@@ -54442,14 +54423,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 
-const _hoisted_1 = { class: "container" }
-const _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"row justify-content-center\"><div class=\"col-md-8\"><div class=\"card\"><div class=\"card-header\">Example Component</div><div class=\"card-body\"> I&#39;m an example component. </div></div></div></div>", 1)
-const _hoisted_3 = [
-  _hoisted_2
-]
+const _hoisted_1 = {
+  style: {"overflow":"visible","padding-left":"1500px","padding-top":"750px"},
+  viewBox: "0 0 1500 1500"
+}
+const _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
+  id: "curve",
+  fill: "transparent",
+  transform: "scale(0.75)",
+  "sodipodi:cx": "164.60023",
+  "sodipodi:cy": "385.86615",
+  d: "m 164.60023,385.86615 c 5.60615,4.7944 -3.69688,9.92236 -7.96861,9.31778 -11.57612,-1.63837 -14.54291,-16.0706 -10.66695,-25.25501 6.93317,-16.42876 27.99324,-19.93369 42.54141,-12.01612 21.35003,11.61935 25.46886,40.07206 13.36529,59.82781 -16.13215,26.33131 -52.20559,31.06463 -77.11421,14.71446 -31.34495,-20.57502 -36.691556,-64.36503 -16.06363,-94.40061 24.98318,-36.37712 76.53901,-42.33649 111.68701,-17.4128 41.4207,29.3717 47.99272,88.72206 18.76197,128.97341 C 205.39445,496.08685 138.23135,503.27156 92.8827,469.72621 41.354684,431.60984 33.55716,356.62169 71.422392,306.18 113.90146,249.59204 196.72336,241.18158 252.255,283.37052 313.90564,330.20824 322.92916,420.87029 276.41365,481.48953 225.2203,548.20495 126.71329,557.84164 61.00824,506.99735 -10.773572,451.45069 -21.023545,345.09497 34.151255,274.30554 94.049402,197.45604 208.25679,186.5927 284.12946,246.09939 c 81.91822,64.24819 93.39502,186.30962 29.55532,267.2646 C 245.08772,600.35178 115.1703,612.4421 29.13378,544.26848 -62.924285,471.32351 -75.628193,333.5485 -3.1198824,242.43108 74.172194,145.30215 219.80614,131.9846 316.00392,208.82825 c 102.20029,81.63851 116.13153,235.13252 34.952,336.4102 C 264.97155,652.51053 103.6165,667.0555 -2.74068,581.53962 -115.08491,491.20988 -130.24366,321.99296 -40.39102,210.55662 54.283663,93.139917 231.36317,77.367365 347.87838,171.55711 470.36783,270.57637 486.75422,455.5191 388.22706,577.11291 284.86354,704.67535 92.057044,721.6756 -34.61514,618.81076 -167.25078,511.10326 -184.86492,310.43251 -77.662157,178.68216 34.389073,40.973129 242.9245,22.745073 379.75284,134.28597 522.53543,250.68071 541.37742,467.0812 425.4982,608.98737 304.76015,756.84367 80.494247,776.29961 -66.4896,656.08189 -219.41975,531.00071 -239.48965,298.8691 -114.93329,146.8077 14.490862,-11.196417 254.48847,-31.880307 411.6273,97.014837 574.7055,230.78182 596.00338,478.64568 462.76933,640.86183"
+}, null, -1 /* HOISTED */)
+const _hoisted_3 = { "font-size": "15px" }
+const _hoisted_4 = { "xlink:href": "#curve" }
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, _hoisted_3))
+  return ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [
+    ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", _hoisted_1, [
+      _hoisted_2,
+      (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("text", _hoisted_3, [
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("textPath", _hoisted_4, [
+          (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default")
+        ])
+      ])
+    ]))
+  ]))
 }
 
 /***/ }),
