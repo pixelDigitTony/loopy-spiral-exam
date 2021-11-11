@@ -1,7 +1,6 @@
 <?php
 
-use App\Models\Random;
-use App\Models\Breakdown;
+use App\Http\Controllers\RandomController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,15 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */ 
 
-Route::get('/', function () {
-    $random = Random::factory()->create([
-        'name' => 'Name'
-    ]);
 
-    $random->breakdowns()->create(['value' =>  'New Value']);
-
-    $random->push();
-  
-    return $random->breakdowns;
-
-});
+Route::get('/', [RandomController::class, 'index'])->name('home');

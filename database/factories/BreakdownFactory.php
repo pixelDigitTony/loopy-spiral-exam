@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Random;
+use App\Models\Breakdown;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class RandomFactory extends Factory
+class BreakdownFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Random::class;
+    protected $model = Breakdown::class;
 
     /**
      * Define the model's default state.
@@ -22,7 +22,7 @@ class RandomFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->name()
+            'value' => $this->faker->regexify('[A-Z0-9]{5}')
         ];
     }
 }

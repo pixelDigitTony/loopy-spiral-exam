@@ -7,11 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Breakdown extends Model
 {
+    use HasFactory;
 
     protected $guarded = [];
     
     public function random()
     {
-        return $this->belongsTo(Random::class);
+        return $this->belongTo(Random::class);
     }
+
 }
